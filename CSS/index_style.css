@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../Images/NEC.jpg'); /* Adjust the path accordingly */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px; /* Added padding for better layout on smaller screens */
+}
+
+.login-container {
+	background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Slightly increased for better spacing */
+    text-align: center;
+    position: relative;
+}
+
+.header-image {
+	background-image: url('../Images/Handler6.jpg'); /* Adjust the path */
+    background-size: contain; /* Ensures the image fits inside without cropping */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120px; /* Increased height for better visibility */
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Rounded corners on the top */
+    margin-bottom: 2px; /* Added spacing below the image */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 22px;
+}
+h3{
+	color: #007bff; /* Change this to any color you prefer */
+    font-size: 20px; /* Adjust the size if needed */
+    font-weight: bold; /* Optional: make the text bold */
+    margin: 10px 0;
+}
+h4, h5 {
+    color: #555; /* Change text color for better readability */
+    margin: 10px 0;
+    text-align: left; /* Align text to the left */
+}
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and borders are included in width */
+    font-size: 14px; /* Ensures both input and select have the same font size */
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px; /* Adjust as necessary */
+    text-align: left; /* Align the text to the left if needed */
+    padding: 5px;
+    display: none; /* Initially hidden */
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Make form elements responsive for smaller screens */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+		 width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    select,
+    button {
+        font-size: 14px;
+    }
+}
